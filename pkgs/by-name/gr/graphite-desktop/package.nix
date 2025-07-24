@@ -107,8 +107,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
     popd
   '';
-
-  CEF_PATH = "${cefRsCompatibleLibCef}/lib";
+  env.CEF_PATH = "${cefRsCompatibleLibCef}/lib";
   cargoBuildFlags = [ "-p" "graphite-desktop" ];
 
   LD_LIBRARY_PATH = lib.makeLibraryPath finalAttrs.buildInputs; # TODO: move to wrapper
