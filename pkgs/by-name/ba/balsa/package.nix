@@ -19,7 +19,7 @@
   ninja,
   pkg-config,
   sqlite,
-  webkitgtk_4_0,
+  webkitgtk_4_1,
   wrapGAppsHook3,
 }:
 
